@@ -25,7 +25,8 @@ class Player
     elsif warrior.feel.wall?
       warrior.pivot!
     else
-      warrior.walk!
+      warrior.walk! && warrior.attack!
     end
   end 
 end
+//adding a commit
